@@ -80,15 +80,3 @@ for x in range(1, 6):
     print(x, "ler")
     for y in range(1, 6):
         print("\t {}*{}={}".format(x, y, x*y))
-
-
-
-
-
-
-
-
-
-
-
-
