@@ -153,7 +153,7 @@ print("zeynep", "sueda", "hilal")  # zeynep---sueda---hilal     zeynep sueda hil
 
 print("\n")
 
-print(list(range(10)))
+print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 for dd in range(1, 3):  # (baslangıç : bitiş : artış)
     print(dd, ". sıra")
 # 1 . sıra
