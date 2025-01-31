@@ -1,4 +1,3 @@
-"""
 dosya = open("ornek.txt")
 icerik = dosya.read()
 
@@ -42,7 +41,6 @@ with open(dosya_adi) as dosya:
 # ['idil gursoy\n', 'yazilim muhendisligi\n', '3. sinif\n', '20220601040']
 
 print("\n")
-"""
 
 # önceki kısmı comment içine alıp çalıştır
 import os
@@ -62,18 +60,26 @@ with open(dosya_adi_2, "w") as dosya:
 with open(dosya_adi_2, "r") as dosya:
     print(dosya.read())
 
+dosya_adi_3 = "ornek3.txt"
+if not(os.path.exists(dosya_adi_3)):
+    # os.makedirs(dosya_adi_3)
+    dosya = open(dosya_adi_3, "x")
+    print("dosya oluşturuldu.")
+    dosya.close()
+else:
+    print("dosya zaten mecvut")
 
-
-
+time.sleep(5)
+if os.path.exists(dosya_adi_3):
+    os.remove(dosya_adi_3)
+    print("dosya silindi")
+else:
+    print("silinecek dosya mecvut değil")
 
 dosya.close()
-
-
-
-
-
-
-
-
-
-
+dosya.close()
+dosya.close()
+dosya.close()
+dosya.close()
+dosya.close()
+dosya.close()
