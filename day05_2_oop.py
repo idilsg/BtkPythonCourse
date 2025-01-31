@@ -84,14 +84,3 @@ class Ogrenci2():
 ogr1 = Ogrenci2("Hilal", "Yelekçi", 12345678910)
 print(ogr1.tam_ad())  # HilalYelekçi
 print(Ogrenci2.tam_ad(ogr1))  # HilalYelekçi
-
-
-
-
-
-
-
-
-
-
-
