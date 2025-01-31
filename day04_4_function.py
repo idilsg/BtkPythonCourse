@@ -1,3 +1,4 @@
+"""
 def selamla1(ad1, ad2):
     print(f"selam {ad1} ve {ad2}, kursumuza hoşgeldin.")
 
@@ -78,7 +79,7 @@ if __name__ == "__main__":
     program()
 
 print("\n")
-
+"""
 
 def daire_alani(r=1, pi=3.14):
     alan = pi * (r**2)
@@ -101,3 +102,17 @@ def ortalama(*args):
 
 s_ortalama = ortalama(1, 2, 3, 4, 5)
 print(s_ortalama)
+
+print("\n")
+
+
+def ogrenci_karti(*args,**kwargs):
+    print(kwargs)  # {'ogrenci_adi': 'idil', 'ogrenci_no': 507}
+    print(type(kwargs))  # dict
+    for bilgiler in kwargs:
+        print(bilgiler, kwargs[bilgiler])
+        #  ogrenci_adi idil
+        #  ogrenci_no 507
+
+
+ogrenci_karti("Öğrenci kartı", ogrenci_adi="idil", ogrenci_no=507)
