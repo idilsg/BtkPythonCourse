@@ -48,5 +48,22 @@ for data in json_data:
 
 print(ogrenci_listesi)  # [<__main__.Ogrenci object at 0x0000027243EC1E20>, <__main__.Ogrenci object at 0x0000027243EC1E50>]
 
+print("")
+
+dosya = open("bilgiler.json")
+ogr_bilgileri_json = (dosya.read())
+ogrenci_listesi_json = []
+json_data2 = json.loads(ogr_bilgileri_json)
+print(json_data2)
+for data in json_data2:
+    print(data, json_data2[data])
+    ogr = Ogrenci(json_data2[data])
+    ogrenci_listesi_json.append(ogr)
+
+print(ogrenci_listesi_json)
+print(ogrenci_listesi_json[0])
+
+
+
 
 
