@@ -37,6 +37,3 @@ while True:
         birim_sil()
     elif cevap == "x":
         exit()
-
-
-
